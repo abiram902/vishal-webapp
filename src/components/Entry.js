@@ -22,9 +22,11 @@ function Entry() {
   useEffect(() => {
     let ref = database.ref("/lrs");
     ref.on("value", (snapshot) => {
-      //const snap = snapshot.val();
       setLr([...snapshot.val()]);
-      console.log(lr);
+      snapshot.forEach((childSnap) => {
+        console.log(childSnap.key);
+        console.log(childSnap.val().uuid);
+      });
     });
   }, []);
 
