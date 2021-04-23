@@ -1,0 +1,46 @@
+        <div className="entry__form__rowone">
+          <label>Lr.no</label>
+
+          <input type="number"></input>
+
+          <label>Invoice</label>
+
+          <input type="number"></input>
+
+          <label>Material</label>
+
+          <input type="text"></input>
+
+          <label>Quantity</label>
+
+          <input type="number"></input>
+        </div>
+        <div className="entry__form__rowtwo">
+          <label>From</label>
+
+          <input type="text"></input>
+
+          <label>To</label>
+
+          <input type="text"></input>
+        </div>
+        <div className="entry__form__rowthree">
+          <label>Lr.date</label>
+
+          <input type="date"></input>
+
+          <label>Invoice Date</label>
+
+          <input type="date"></input>
+
+          <label>Vehicle number</label>
+
+          <input type="text"></input>
+
+          <button type="submit" className="entry__submit">
+            Submit
+          </button>
+          <button type="reset" className="entry__reset">
+            Reset
+          </button>
+        </div>

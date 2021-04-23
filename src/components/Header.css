@@ -1,0 +1,17 @@
+.Header {
+  background-color: white;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.Header__logo {
+  width: 100px;
+}
+.Header__title {
+  color: rgb(22, 22, 123);
+  font-family: "Times New Roman", Times, serif;
+}
