@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Entry.css";
 
-function Table({ lr, handleBlur, deleteEntry }) {
+function Table({ lr, handleBlur, deleteEntry, showAll }) {
   const [edit, setEdit] = useState({
     status: false,
     colId: "",
@@ -39,7 +39,7 @@ function Table({ lr, handleBlur, deleteEntry }) {
         {lr
           .slice()
           .reverse()
-          .slice(0, 21)
+          .slice(0, showAll ? lr.length : 21)
           .map((row, i) => (
             <tr>
               {coloumns.map((column, j) =>
@@ -71,7 +71,14 @@ function Table({ lr, handleBlur, deleteEntry }) {
                   </td>
                 )
               )}
-              <button onClick={(e) => deleteEntry(e, row["uuid"])}>❌ </button>
+              <td>
+                <button
+                  className="delete__button"
+                  onClick={(e) => deleteEntry(e, row["uuid"])}
+                >
+                  ❌
+                </button>
+              </td>
             </tr>
           ))}
       </tbody>
