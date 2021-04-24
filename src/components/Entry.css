@@ -89,3 +89,11 @@
   background-color: rgb(22, 22, 123);
   color: white;
 }
+
+.show__all {
+  background-color: rgb(22, 22, 123);
+  color: white;
+  width: 200px;
+  height: 75px;
+  border-radius: 30px;
+}

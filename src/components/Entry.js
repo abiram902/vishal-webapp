@@ -21,15 +21,11 @@ function Entry() {
   const [qu, setQu] = useState("");
 
   useEffect(() => {
+    console.log("in useeffect");
     let ref = database.ref("/lrs");
-    ref.on("value", (snapshot) => {
-      setLr([...snapshot.val()]);
-      snapshot.forEach((childSnap) => {
-        console.log(childSnap.key);
-        console.log(childSnap.val().uuid);
-      });
-    });
-  }, [sync]);
+    ref.on("value", (snapshot) => setLr([...snapshot.val()]));
+    console.log(lr);
+  }, []);
 
   // upload data to database
   const handleDb = (list) => {
