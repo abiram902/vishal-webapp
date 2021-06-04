@@ -1,23 +1,44 @@
 .navbar {
-  background-color: rgb(22, 22, 123);
-  height: 40px;
-  margin-top: 0;
-
+  height: 60px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 10px;
+  justify-content: space-evenly;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: rgb(22, 22, 123);
+  z-index: 10;
+  border-bottom: 2px solid rgb(22, 22, 123);
+}
+.nav__buttons {
+  display: flex;
+  text-decoration: none;
 }
 
 .navbar__item {
   text-align: center;
   padding: 15px;
-  color: white;
+  text-decoration: none;
+  color: aliceblue;
 }
 .navbar__item:hover {
-  background-color: rgb(45, 45, 175);
-  max-height: 35px;
+  background-color: aliceblue;
+  color: rgb(22, 22, 123);
+  height: 80%;
 }
-.navbar__item > h4 {
+
+.logo {
+  width: 80px;
+  padding-top: 10px;
+  margin: 0%;
+}
+.nav__logo {
+  display: flex;
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  align-items: center;
+  font-size: 25px;
   text-decoration: none;
 }

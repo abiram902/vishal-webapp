@@ -1,0 +1,225 @@
+#section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(22, 22, 123, 0.7), white), url("truck.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(22, 22, 123);
+  max-width: 100vw;
+}
+
+#aboutUs {
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.Aheading {
+  color: rgba(22, 22, 123);
+
+  font-size: 40px;
+}
+
+.para {
+  color: grey;
+
+  font-size: 30px;
+}
+#contactUs {
+  background-color: rgba(22, 22, 123);
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 5px;
+  color: aliceblue;
+  margin-top: 150px;
+}
+
+.heading {
+  padding-left: 25px;
+  font-size: 60px;
+  color: aliceblue;
+}
+.linebelow__heading {
+  font-family: sans-serif;
+  font-size: 40px;
+  padding-left: 150px;
+}
+
+.row__two {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding-top: 5%;
+  max-width: 100vw;
+}
+
+.fastSide {
+  width: 60%;
+  font-size: 30px;
+  color: rgba(22, 22, 123);
+}
+
+.fastSide h3 {
+  color: grey;
+}
+.fast {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.row__three {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  max-width: 100vw;
+}
+
+.materialHandling {
+  width: 60%;
+  font-size: 30px;
+  color: rgba(22, 22, 123);
+  padding-left: 5%;
+}
+
+.materialHandling h3 {
+  color: grey;
+}
+
+.crossfade {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 400px;
+  width: 28%;
+}
+.crossfade > figure {
+  animation: slideShow 20s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  opacity: 0;
+
+  width: 100%;
+}
+
+.contactDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactDetails h4 {
+  font-weight: 100;
+  padding: 10px 50px;
+}
+
+.crossfade > figure img {
+  height: 100%;
+  width: 100%;
+}
+
+.crossfade > figure:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.crossfade > figure:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.crossfade > figure:nth-child(4) {
+  animation-delay: 12s;
+}
+.crossfade > figure:nth-child(5) {
+  animation-delay: 16s;
+}
+
+@keyframes slideShow {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .heading {
+    font-size: 40px;
+  }
+  .linebelow__heading {
+    font-size: 25px;
+  }
+  .fastSide {
+    font-size: 20px;
+  }
+  .row__three {
+    height: 400px;
+  }
+  .materialHandling {
+    font-size: 20px;
+    padding: 0%;
+    width: 40%;
+  }
+  .crossfade {
+    width: 40%;
+  }
+  .para {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .row__two {
+    flex-direction: column;
+    border-bottom: 1px solid rgb(22, 22, 123);
+    border-top: 1px solid rgb(22, 22, 123);
+  }
+  .fastSide {
+    width: 80%;
+  }
+  .fast {
+    width: 30%;
+    height: 150px;
+  }
+  .row__three {
+    flex-direction: column;
+    height: 800px;
+    border-bottom: 1px solid rgb(22, 22, 123);
+  }
+  .materialHandling {
+    width: 80%;
+  }
+}
